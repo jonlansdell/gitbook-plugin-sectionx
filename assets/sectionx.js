@@ -15,14 +15,14 @@ require(["gitbook", "jquery"], function (gitbook, $) {
     });
 
     $('#' + tar).on('show.bs.collapse', function () {
-      $source.html($source.attr('hide') ?
-        ('<b>' + $source.attr('hide') + '</b><span class="fa fa-angle-up pull-left"/>') :
-        '<span class="fa fa-angle-up"/>');
+      $source.parent().find('a.section.btn').html($source.attr('hide') ?
+          ('<b>' + $source.attr('hide') + '</b><span class="fa fa-angle-up pull-left"/>') :
+          '<span class="fa fa-angle-up"/>');
     });
 
     $('#' + tar).on('hide.bs.collapse', function () {
-      $source.html($source.attr('show') ?
-        ('<b>' + $source.attr('show') + '</b><span class="fa fa-angle-down pull-left"/>') : '<span class="fa fa-angle-down"/>');
+      $source.parent().find('a.section.btn').html($source.attr('show') ?
+          ('<b>' + $source.attr('show') + '</b><span class="fa fa-angle-down pull-left"/>') : '<span class="fa fa-angle-down"/>');
     });
   };
 

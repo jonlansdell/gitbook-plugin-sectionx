@@ -19,5 +19,9 @@
 }
 
 .atTitle {
+	cursor: pointer;
+}
+
+.btn.atTitle {
 	display: flex;
 }
