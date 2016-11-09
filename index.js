@@ -90,7 +90,9 @@ module.exports = {
                 '<div class="panel panel-default">' +
                 '<div class="panel-heading">' +
                 '<' + customTag + '>' +
+                '<a class="section atTitle" target="' + $(this).data('id') + '">' +
                 $(this).data('title') +
+                '</a>' +
                 '<a class="pull-right section atTitle btn btn-default" target=' + $(this).data('id') + '>' +
                 '<span class="fa fa-angle-up" />' +
                 '</a>' +
