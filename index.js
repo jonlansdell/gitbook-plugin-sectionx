@@ -88,10 +88,12 @@ module.exports = {
 
               $(this).html(
                 '<div class="panel panel-default">' +
-                '<div class="panel-heading">' +
+                '<div class="panel-heading section atTitle" data-toggle="collapse" target="' + $(this).data('id') + '">' +
                 '<' + customTag + '>' +
+                '<a class="section atTitle">' +
                 $(this).data('title') +
-                '<a class="pull-right section atTitle btn btn-default" target=' + $(this).data('id') + '>' +
+                '</a>' +
+                '<a class="pull-right section atTitle btn btn-default">' +
                 '<span class="fa fa-angle-up" />' +
                 '</a>' +
                 '</' + customTag + '>' +
