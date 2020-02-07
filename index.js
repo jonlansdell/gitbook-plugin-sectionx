@@ -5,10 +5,12 @@ module.exports = {
   website: {
     assets: "./assets",
     js: [
-      "sectionx.js"
+      "sectionx.js",
+      "bootstrap.bundle.min.js"
     ],
     css: [
-      "sectionx.css"
+      "sectionx.css",
+      "bootstrap.min.css"
     ]
   },
 
